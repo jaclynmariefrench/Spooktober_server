@@ -12,11 +12,16 @@ Class-based views
 Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+
 """
+from rest_framework import routers
+from spooktoberapi.views.social_auth import exchange_token
 from django.contrib import admin
 from django.urls import path
 
+router = routers.DefaultRouter(trailing_slash=False)
 #exchange token here
+router.register('social/google-oauth2' + r'social/(?P<backend>[^/]+)/$', exchange_token),
 
 urlpatterns = [
     path('admin/', admin.site.urls),
