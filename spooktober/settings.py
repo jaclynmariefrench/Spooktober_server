@@ -39,7 +39,7 @@ DEBUG = env.bool('DEBUG', default=True)
 BASE_BACKEND_URL = env.str('DJANGO_BASE_BACKEND_URL', default='http://localhost:8000')
 BASE_FRONTEND_URL = env.str('DJANGO_BASE_FRONTEND_URL', default='http://localhost:3000')
 
-ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS', default=['localhost',])
+ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS', default=['localhost', ])
 
 
 # Application definition
@@ -56,7 +56,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'django_extensions',
     'rest_framework_jwt',
-    'rest_framework_jwt.blacklist',
+    # 'rest_framework_simplejwt.token_blacklist',
     'users',
     'spooktoberapi',
 ]
@@ -64,6 +64,10 @@ INSTALLED_APPS = [
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication',  
     ),
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
@@ -71,6 +75,7 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
     'PAGE_SIZE': 10
 }
+
 
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',

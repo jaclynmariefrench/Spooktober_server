@@ -1,9 +1,18 @@
-{
+{   
+    "python.formatting.autopep8Path": "/Users/jaclynfrench/.pyenv/shims/autopep8",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
     "python.linting.pylintArgs": [
         "--load-plugins=pylint_django",
         "--django-settings-module=spooktober_server.settings",
+    ],
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "spooktoberdb",
+            "database": "db.sqlite3"
+        }
     ],
     
 }
