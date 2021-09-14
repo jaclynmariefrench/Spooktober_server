@@ -11,6 +11,17 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import datetime
+import environ
+
+from pathlib import Path
+from django.core.management.utils import get_random_secret_key
+
+env = environ.Env(
+    DEBUG=(int, 0)
+)
+# reading .env file
+environ.Env.read_env('.env')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,12 +31,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-!ne)!6a*maki+2dihyily*jg$xg02o32#r7y5f#8=k3k*uogkr'
+SECRET_KEY = env.str('DJANGO_SECRET_KEY', default=get_random_secret_key())
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env.bool('DEBUG', default=True)
 
-ALLOWED_HOSTS = []
+BASE_BACKEND_URL = env.str('DJANGO_BASE_BACKEND_URL', default='http://localhost:8000')
+BASE_FRONTEND_URL = env.str('DJANGO_BASE_FRONTEND_URL', default='http://localhost:3000')
+
+ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS', default=['localhost',])
 
 
 # Application definition
@@ -40,6 +54,10 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
+    'django_extensions',
+    'rest_framework_jwt',
+    'rest_framework_jwt.blacklist',
+    'users',
     'spooktoberapi',
 ]
 
@@ -144,3 +162,40 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Custom user model
+AUTH_USER_MODEL = 'users.User'
+
+PRODUCTION_SETTINGS = env.bool('DJANGO_PRODUCTION_SETTINGS', default=False)
+
+# JWT settings
+JWT_EXPIRATION_DELTA_DEFAULT = 2.628e+6  # 1 month in seconds
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(
+        seconds=env.int(
+            'DJANGO_JWT_EXPIRATION_DELTA',
+            default=JWT_EXPIRATION_DELTA_DEFAULT
+        )
+    ),
+    'JWT_AUTH_HEADER_PREFIX': 'JWT',
+    'JWT_GET_USER_SECRET_KEY': lambda user: user.secret_key,
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'users.selectors.jwt_response_payload_handler',
+    'JWT_AUTH_COOKIE': 'jwt_token',
+    'JWT_AUTH_COOKIE_SAMESITE': 'None'
+}
+
+
+# CORS settings
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_WHITELIST = env.list(
+    'DJANGO_CORS_ORIGIN_WHITELIST',
+    default=[BASE_FRONTEND_URL]
+)
+
+
+# Google OAuth2 settings
+GOOGLE_OAUTH2_CLIENT_ID = env.str('DJANGO_GOOGLE_OAUTH2_CLIENT_ID')
+GOOGLE_OAUTH2_CLIENT_SECRET = env.str('DJANGO_GOOGLE_OAUTH2_CLIENT_SECRET')
+
+# Heroku OR OTHER DEPLOYED APP
+# django_heroku.settings(locals())
