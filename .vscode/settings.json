@@ -1,4 +1,5 @@
-{
+{   
+    "python.formatting.autopep8Path": "/Users/jaclynfrench/.pyenv/shims/autopep8",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
     "python.linting.pylintArgs": [
