@@ -1,0 +1,1702 @@
+[
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 1,
+  "fields":
+      {
+      "title": "28 Days Later",
+      "genre": "Horror",
+      "subGenre": "Thriller",
+      "spirit": "Scary",
+      "era": "2000s",
+      "isMovie": true,
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [1],
+      "imdb_img": "",
+      "imdb_rating": 0
+  }
+ },
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 2,
+      "fields":
+      {
+      "title": "28 Weeks Later",
+      "genre": "Horror",
+      "subGenre": "Thriller",
+      "spirit": "Scary",
+      "era": "2000s",
+      "isMovie": true,
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [1],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 3,
+  "fields":
+  {
+      "title": "Abbot & Costello Meet Frankenstein",
+      "isMovie": true,
+      "genre": "Comedy",
+      "subGenre": "Horror",
+      "spirit": "Spooky",
+      "era": "Classic Hollywood",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [2],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 4,
+  "fields":
+  {
+      "title": "Abbot & Costello Meet the Wolfman",
+      "isMovie": true,
+      "genre": "Comedy",
+      "subGenre": "Horror",
+      "spirit": "Spooky",
+      "era": "Classic Hollywood",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [3],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 5,
+      "fields":
+      {
+      "title": "Army of Darkness",
+      "genre": "Horror",
+      "isMovie": true,
+      "subGenre": "Comedy",
+      "spirit": "Gorey",
+      "era": "80s",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [1],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 6,
+      "fields":
+      {
+      "title": "Beetlejuice",
+      "isMovie": true,
+      "genre": "Fantasy",
+      "subGenre": "Comedy",
+      "spirit": "Spooky",
+      "era": "80s",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": true,
+      "isStopMotion": false,
+      "supernatural": [1, 8],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 7,
+  "fields":
+  {
+      "title": "Big Trouble in Little China",
+      "isMovie": true,
+      "genre": "Fantasy",
+      "subGenre": "Comedy",
+      "spirit": "isMagical",
+      "era": "80s",
+      "isNostalgic": false,
+      "isMagic": true,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [4],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 8,
+  "fields":
+  {
+      "title": "Bram Stoker’s Dracula",
+      "genre": "Horror",
+      "isMovie": true,
+      "subGenre": "Romance",
+      "spirit": "Victorian",
+      "era": "90s",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [5],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 9,
+      "fields":
+      {
+      "title": "Constantine",
+      "isMovie": true,
+      "genre": "Fantasy",
+      "subGenre": "Horror",
+      "era": "2000s",
+      "spirit": "Spooky",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [6],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 10,
+      "fields":
+      {
+      "title": "Coralline",
+      "isMovie": true,
+      "subGenre": "Thriller",
+      "genre": "Family",
+      "era": "2000s",
+      "spirit": "Spooky",
+      "isNostalgic": true,
+      "isMagic": true,
+      "isTimBurton": false,
+      "isStopMotion": true,
+      "supernatural": [4],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 11,
+      "fields":
+      {
+      "title": "Corpse Bride",
+      "isMovie": true,
+      "genre": "Family",
+      "subGenre": "Horror",
+      "era": "2000s",
+      "spirit": "Victorian",
+      "isNostalgic": true,
+      "isMagic": true,
+      "isTimBurton": true,
+      "isStopMotion": true,
+      "supernatural": [1],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 12,
+  "fields":
+  {
+      "title": "Curse of Frankenstein",
+      "genre": "Horror",
+      "isMovie": true,
+      "subGenre": "Classic",
+      "spirit": "Victorian",
+      "era": "50s",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [2],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 13,
+      "fields":
+      {
+      "title": "Dark Shadows",
+      "genre": "Horror",
+      "isMovie": true,
+      "subGenre": "Comedy",
+      "spirit": "Victorian",
+      "era": "2000s",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": true,
+      "isStopMotion": false,
+      "supernatural": [5],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 14,
+  "fields":
+  {
+      "title": "Dracula",
+      "isMovie": true,
+      "genre": "Classic",
+      "subGenre": "Horror",
+      "spirit": "Victorian",
+      "era": "Classic Hollywood",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [5],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 15,
+  "fields":
+      {
+      "title": "Edward Scissorhands",
+      "isMovie": true,
+      "genre": "Fantasy",
+      "subGenre": "Comedy",
+      "spirit": "Victorian",
+      "era": "80s",
+      "isNostalgic": true,
+      "isMagic": true,
+      "isStopMotion": false,
+      "isTimBurton": true,
+      "supernatural": [2],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 16,
+      "fields":
+      {
+      "title": "End of Days",
+      "isMovie": true,
+      "genre": "Thriller",
+      "spirit": "Scary",
+      "era": "2000s",
+      "subGenre": "Action",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [6],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 17,
+      "fields":
+      {
+      "title": "Ernest Scared Stupid",
+      "isMovie": true,
+      "genre": "Family",
+      "subGenre": "Comedy",
+      "spirit": "Fun",
+      "era": "90s",
+      "isNostalgic": true,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [4],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 18,
+      "fields":
+      {
+      "title": "Evil Dead",
+      "genre": "Horror",
+      "isMovie": true,
+      "subGenre": "Comedy",
+      "spirit": "Gorey",
+      "era": "80s",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [1],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 19,
+      "fields":
+      {
+      "title": "Fantastic Mr. Fox",
+      "isMovie": true,
+      "genre": "Family",
+      "subGenre": "Comedy",
+      "era": "2000s",
+      "spirit": "Autumn",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": true,
+      "supernatural": []
+,      "imdb_img": ""
+ ,
+"imdb_rating": 0}
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 20,
+  "fields":
+  {
+      "title": "Frankenstein",
+      "isMovie": true,
+      "genre": "Classic",
+      "subGenre": "Horror",
+      "spirit": "Victorian",
+      "era": "Classic Hollywood",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false, 
+      "supernatural": [2],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 21,
+      "fields":
+      {
+      "title": "Frankenweenie",
+      "isMovie": true,
+      "genre": "Family",
+      "subGenre": "Horror",
+      "era": "2000s",
+      "spirit": "Spooky",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": true,
+      "isStopMotion": true,
+      "supernatural": [2],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 22,
+      "fields":
+      {
+      "title": "Friday the 13th",
+      "genre": "Horror",
+      "subGenre": "Thriller",
+      "spirit": "Scary",
+      "isMovie": true,
+      "era": "80s",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [7],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+      "pk": 23,
+      "fields":
+      {
+      "title": "Ghost",
+      "isMovie": true,
+      "genre": "Thriller",
+      "spirit": "Scary",
+      "subGenre": "Fantasy",
+      "era": "80s",
+      "isNostalgic": true,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [8],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 24,
+      "fields":
+      {
+      "title": "Ghostbusters",
+      "genre": "Fantasy",
+      "subGenre": "Comedy",
+      "spirit": "Fun",
+      "era": "80s",
+      "isMovie": true,
+      "isNostalgic": true,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [8],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 25,
+  "fields":
+      {
+      "title": "Halloween (original)",
+      "genre": "Horror",
+      "subGenre": "Thriller",
+      "spirit": "Scary",
+      "isMovie": true,
+      "era": "80s",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,     
+      "supernatural": [7],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 26,
+      "fields":
+      {
+      "title": "Halloweentown",
+      "isMovie": true,
+      "genre": "Family",
+      "subGenre": "Fantasy",
+      "spirit": "Spooky",
+      "era": "90s",
+      "isNostalgic": true,
+      "isMagic": true,
+      "isTimBurton": false,
+      "isStopMotion": false,    
+      "supernatural": [9],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 27,
+      "fields":
+      {
+      "title": "Harry Potter",
+      "isMovie": true,
+      "genre": "Family",
+      "subGenre": "Fantasy",
+      "era": "2000s",
+      "spirit": "isMagical",
+      "isNostalgic": true,
+      "isMagic": true,
+      "isTimBurton": false,
+      "isStopMotion": false,     
+      "supernatural": [10, 9],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 28,
+      "fields":
+      {
+      "title": "Hocus Pocus",
+      "isMovie": true,
+      "genre": "Family",
+      "subGenre": "Fantasy",
+      "spirit": "Spooky",
+      "era": "90s",
+      "isNostalgic": true,
+      "isMagic": true,
+      "isTimBurton": false,
+      "isStopMotion": false,  
+      "supernatural": [9],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 29,
+  "fields":
+      {
+      "title": "Horror of Dracula",
+      "genre": "Horror",
+      "isMovie": true,
+      "subGenre": "Classic",
+      "spirit": "Victorian",
+      "era": "50s",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,  
+      "supernatural": [5],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 30,
+      "fields":
+      {
+      "title": "Hotel Transylvania",
+      "isMovie": true,
+      "genre": "Family",
+      "subGenre": "Comedy",
+      "era": "2000s",
+      "spirit": "Fun",
+      "isNostalgic": false,
+      "isMagic": true,
+      "isTimBurton": false,
+      "isStopMotion": false,   
+      "supernatural": [5],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 31,
+  "fields":
+  {
+      "title": "House on Haunted Hill (Vincent Price)",
+      "genre": "Horror",
+      "subGenre": "Thriller",
+      "isMovie": true,
+      "spirit": "Spooky",
+      "era": "Classic Hollywood",
+      "isNostalgic": true,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,     
+      "supernatural": [11],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 32,
+  "fields":
+  {
+      "title": "Interview With A Vampire",
+      "isMovie": true,
+      "genre": "Fantasy",
+      "subGenre": "Horror",
+      "spirit": "Victorian",
+      "era": "90s",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,    
+      "supernatural": [5],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 33,
+      "fields":
+      {
+      "title": "Labyrinth",
+      "isMovie": true,
+      "genre": "Fantasy",
+      "subGenre": "Family",
+      "spirit": "isMagical",
+      "era": "80s",
+      "isNostalgic": true,
+      "isMagic": true,
+      "isTimBurton": false,
+      "isStopMotion": false,    
+      "supernatural": [10, 9],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 34,
+      "fields":
+      {
+      "title": "Matilda",
+      "isMovie": true,
+      "genre": "Family",
+      "subGenre": "Comedy",
+      "spirit": "isMagical",
+      "era": "90s",
+      "isNostalgic": true,
+      "isMagic": true,
+      "isTimBurton": false,
+      "isStopMotion": false,    
+      "supernatural": [9],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 35,
+  "fields":
+      {
+      "title": "Mummy",
+      "isMovie": true,
+      "genre": "Classic",
+      "subGenre": "Horror",
+      "spirit": "Victorian",
+      "era": "Classic Hollywood",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,   
+      "supernatural": [12],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 36,
+  "fields":
+  {
+      "title": "Nightmare on Elm Street",
+      "genre": "Horror",
+      "subGenre": "Thriller",
+      "spirit": "Scary",
+      "isMovie": true,
+      "era": "80s",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,    
+      "supernatural": [7],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 37,
+      "fields":
+      {
+      "title": "Paranorman",
+      "isMovie": true,
+      "genre": "Family",
+      "subGenre": "Fantasy",
+      "era": "2000s",
+      "spirit": "Spooky",
+      "isNostalgic": true,
+      "isMagic": true,
+      "isTimBurton": false,
+      "isStopMotion": true,   
+      "supernatural": [1],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 38,
+  "fields":
+  {
+      "title": "Phantom of the Opera",
+      "isMovie": true,
+      "genre": "Romance",
+      "subGenre": "Horror",
+      "era": "2000s",
+      "spirit": "Victorian",
+      "isNostalgic": false,
+      "isMagic": true,
+      "isTimBurton": false,
+      "isStopMotion": false,    
+      "supernatural": [11],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 39,
+      "fields":
+      {
+      "title": "Practical isMagic",
+      "isMovie": true,
+      "genre": "Romance",
+      "subGenre": "Horror",
+      "spirit": "isMagical",
+      "era": "90s",
+      "isNostalgic": true,
+      "isMagic": true,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [9],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 40,
+      "fields":
+      {
+      "title": "Predator",
+      "isMovie": true,
+      "genre": "Thriller",
+      "spirit": "Scary",
+      "subGenre": "Horror",
+      "era": "80s",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,   
+      "supernatural": [4],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 41,
+      "fields":
+      {
+      "title": "Red Riding Hood",
+      "isMovie": true,
+      "genre": "Thriller",
+      "subGenre": "Fantasy",
+      "era": "2000s",
+      "spirit": "Gorey",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,     
+      "supernatural": [3],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 42,
+  "fields":
+  {
+      "title": "Return of the Living Dead",
+      "genre": "Horror",
+      "isMovie": true,
+      "subGenre": "Comedy",
+      "spirit": "Gorey",
+      "era": "80s",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [1],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 43,
+      "fields":
+      {
+      "title": "Signs",
+      "isMovie": true,
+      "genre": "Thriller",
+      "subGenre": "Family",
+      "era": "2000s",
+      "spirit": "Autumn",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,     
+      "supernatural": [13],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 44,
+      "fields":
+      {
+      "title": "Sleepy Hallow",
+      "genre": "Horror",
+      "isMovie": true,
+      "subGenre": "Adventure",
+      "spirit": "Victorian",
+      "era": "90s",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isStopMotion": false,
+      "isTimBurton": true,
+      "supernatural": [1],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 45,
+      "fields":
+      {
+      "title": "Sweeney Todd",
+      "genre": "Horror",
+      "subGenre": "Thriller",
+      "isMovie": true,
+      "era": "2000s",
+      "spirit": "Gorey",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isStopMotion": false,
+      "isTimBurton": true,    
+      "supernatural": [7],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 46,
+  "fields":
+  {
+      "title": "The Bride of Frankenstein",
+      "isMovie": true,
+      "genre": "Classic",
+      "subGenre": "Horror",
+      "spirit": "Victorian",
+      "era": "Classic Hollywood",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,    
+      "supernatural": [2],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 47,
+      "fields":
+      {
+      "title": "The Burbs",
+      "isMovie": true,
+      "subGenre": "Thriller",
+      "genre": "Comedy",
+      "spirit": "Spooky",
+      "era": "80s",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,    
+      "supernatural": [11],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 48,
+  "fields":
+      {
+      "title": "The Dark Crystal (movie)",
+      "isMovie": true,
+      "genre": "Fantasy",
+      "subGenre": "Family",
+      "spirit": "Spooky",
+      "era": "80s",
+      "isNostalgic": true,
+      "isMagic": true,
+      "isTimBurton": false,
+      "isStopMotion": false,    
+      "supernatural": [4],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 49,
+  "fields":
+  {
+      "title": "The Dark Crystal series",
+      "genre": "Fantasy",
+      "subGenre": "Family",
+      "spirit": "Spooky",
+      "era": "2020s",
+      "isMovie": false,
+      "isNostalgic": false,
+      "isMagic": true,
+      "isTimBurton": false,
+      "isStopMotion": false,    
+      "supernatural": [4],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 50,
+      "fields":
+      {
+      "title": "The Haunted Mansion",
+      "isMovie": true,
+      "genre": "Family",
+      "subGenre": "Comedy",
+      "era": "2000s",
+      "spirit": "Spooky",
+      "isNostalgic": true,
+      "isMagic": true,
+      "isTimBurton": false,
+      "isStopMotion": false,    
+      "supernatural": [8],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 51,
+  "fields":
+  {
+      "title": "The Invisible Man",
+      "isMovie": true,
+      "genre": "Classic",
+      "subGenre": "Horror",
+      "spirit": "Spooky",
+      "era": "Classic Hollywood",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,    
+      "supernatural": [11],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 52,
+  "fields":
+  {
+      "title": "The League of Extraordinary Gentleman",
+      "isMovie": true,
+      "genre": "Fantasy",
+      "subGenre": "Adventure",
+      "era": "2000s",
+      "spirit": "Victorian",
+      "isNostalgic": true,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,    
+      "supernatural": [5],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 53,
+  "fields":
+  {
+      "title": "The Legend of the Guardians",
+      "isMovie": true,
+      "genre": "Family",
+      "subGenre": "Fantasy",
+      "era": "2000s",
+      "spirit": "isMagical",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,    
+      "supernatural": []
+,      "imdb_img": ""
+ ,
+"imdb_rating": 0}
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 54,
+      "fields":
+      {
+      "title": "The Lost Boys",
+      "genre": "Horror",
+      "isMovie": true,
+      "subGenre": "Adventure",
+      "spirit": "Spooky",
+      "era": "80s",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,    
+      "supernatural": [5],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 55,
+  "fields":
+      {
+      "title": "The Man with Two Brains",
+      "isMovie": true,
+      "genre": "Comedy",
+      "subGenre": "Adventure",
+      "spirit": "Fun",
+      "era": "80s",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,  
+      "supernatural": [2],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 56,
+      "fields":
+      {
+      "title": "The Monster Squad",
+      "isMovie": true,
+      "genre": "Fantasy",
+      "subGenre": "Family",
+      "spirit": "Fun",
+      "era": "80s",
+      "isNostalgic": true,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [5],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 57,
+      "fields":
+      {
+      "title": "The Mummy",
+      "genre": "Horror",
+      "isMovie": true,
+      "subGenre": "Classic",
+      "spirit": "Victorian",
+      "era": "50s",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [12],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 58,
+  "fields":
+  {
+      "title": "The Never-ending Story",
+      "isMovie": true,
+      "genre": "Fantasy",
+      "subGenre": "Family",
+      "spirit": "isMagical",
+      "era": "80s",
+      "isNostalgic": true,
+      "isMagic": true,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [10, 9],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 59,
+  "fields":
+  {
+      "title": "The Nightmare Before Christmas",
+      "isMovie": true,
+      "genre": "Family",
+      "subGenre": "Horror",
+      "spirit": "Spooky",
+      "era": "90s",
+      "isNostalgic": true,
+      "isMagic": true,
+      "isTimBurton": true,
+      "isStopMotion": true,
+      "supernatural": [4],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 60,
+      "fields":
+      {
+      "title": "The Ninth Gate",
+      "isMovie": true,
+      "genre": "Thriller",
+      "subGenre": "Fantasy",
+      "era": "2000s",
+      "spirit": "Spooky",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [6],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 61,
+      "fields":
+      {
+      "title": "The Raven",
+      "isMovie": true,
+      "genre": "Thriller",
+      "subGenre": "Horror",
+      "era": "2000s",
+      "spirit": "Victorian",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [11],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 62,
+      "fields":
+      {
+      "title": "The Village",
+      "isMovie": true,
+      "genre": "Thriller",
+      "subGenre": "Drama",
+      "era": "2000s",
+      "spirit": "Autumn",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [4],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 63,
+  "fields":
+  {
+      "title": "The Witches of Eastwick",
+      "isMovie": true,
+      "genre": "Fantasy",
+      "subGenre": "Comedy",
+      "spirit": "isMagical",
+      "era": "80s",
+      "isNostalgic": false,
+      "isMagic": true,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [9],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 64,
+      "fields":
+      {
+      "title": "The Wolfman",
+      "genre": "Horror",
+      "isMovie": true,
+      "subGenre": "Romance",
+      "era": "2000s",
+      "spirit": "Victorian",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [3],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 65,
+      "fields":
+      {
+      "title": "Twilight",
+      "isMovie": true,
+      "genre": "Fantasy",
+      "subGenre": "Romance",
+      "era": "2000s",
+      "spirit": "isMagical",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [5],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 66,
+  "fields":
+  {
+      "title": "Wallace & Gromit: The Curse of the Were-Rabbit",
+      "isMovie": true,
+      "genre": "Family",
+      "subGenre": "Comedy",
+      "era": "2000s",
+      "spirit": "Fun",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": true,
+      "supernatural": [4],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 67,
+  "fields":
+  {
+      "title": "Where the Wild Things Are",
+      "isMovie": true,
+      "genre": "Family",
+      "subGenre": "Drama",
+      "era": "2000s",
+      "spirit": "Autumn",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [4],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+      "pk": 68,
+      "fields":
+      {
+      "title": "Witches",
+      "isMovie": true,
+      "genre": "Family",
+      "subGenre": "Fantasy",
+      "spirit": "Spooky",
+      "era": "90s",
+      "isNostalgic": true,
+      "isMagic": true,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [9],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 69,
+  "fields":
+  {
+      "title": "Wolfman",
+      "isMovie": true,
+      "genre": "Classic",
+      "subGenre": "Horror",
+      "spirit": "Victorian",
+      "era": "Classic Hollywood",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [3],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 70,
+  "fields":
+      {
+      "title": "Young Frankenstein",
+      "isMovie": true,
+      "genre": "Comedy",
+      "subGenre": "Horror",
+      "spirit": "Victorian",
+      "era": "70s",
+      "isNostalgic": true,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [2],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 71,
+  "fields":
+      {
+      "title": "Supernatural",
+      "genre": "Fantasy",
+      "subGenre": "Horror",
+      "spirit": "Spooky",
+      "era": "2000s",
+      "isMovie": false,
+      "isNostalgic": true,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [4],
+      "imdb_img": "",
+      "imdb_rating": 0
+ }
+},
+ { 
+      "model": "spooktoberapi.movie_tv", 
+      "pk": 72,
+      "fields":
+      {
+      "title": "Boy Meets World",
+      "isMovie": false,
+      "genre": "",
+      "subGenre": "",
+      "spirit": "",
+      "era": "",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": []
+,      "imdb_img": ""
+ ,
+"imdb_rating": 0}
+},
+ { 
+      "model": "spooktoberapi.movie_tv", 
+      "pk": 73,
+      "fields":
+      {
+      "title": "Psych",
+      "isMovie": false,
+      "genre": "",
+      "subGenre": "",
+      "spirit": "",
+      "era": "",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": []
+,      "imdb_img": ""
+ ,
+"imdb_rating": 0}
+},
+ { 
+      "model": "spooktoberapi.movie_tv", 
+      "pk": 74,
+      "fields":
+      {
+      "title": "Sabrina",
+      "isMovie": false,
+      "genre": "",
+      "subGenre": "",
+      "spirit": "",
+      "era": "",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": []
+,      "imdb_img": ""
+ ,
+"imdb_rating": 0}
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+      "pk": 75,
+      "fields":
+      {
+      "title": "Scooby Doo, Where Are You?",
+      "isMovie": false,
+      "genre": "",
+      "subGenre": "",
+      "spirit": "",
+      "era": "",
+      "isNostalgic": true,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": []
+,      "imdb_img": ""
+ ,
+"imdb_rating": 0}
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+      "pk": 76,
+      "fields":
+      {
+      "title": "Creature from the Black Lagoon",
+      "isMovie": true,
+      "genre": "",
+      "subGenre": "",
+      "spirit": "",
+      "era": "",
+      "isNostalgic": true,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": []
+,      "imdb_img": ""
+ ,
+"imdb_rating": 0}
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 77,
+      "fields":
+      {
+      "title": "Addam's Family/Addam's Family Reunion",
+      "isMovie": true,
+      "genre": "",
+      "subGenre": "",
+      "spirit": "",
+      "era": "",
+      "isNostalgic": true,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": []
+,      "imdb_img": ""
+ ,
+"imdb_rating": 0}
+},
+ { 
+      "model": "spooktoberapi.movie_tv", 
+      "pk": 78,
+      "fields":
+      {
+      "title": "Munster, Go Home!",
+      "isMovie": true,
+      "genre": "",
+      "subGenre": "",
+      "spirit": "",
+      "era": "",
+      "isNostalgic": true,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": []
+,      "imdb_img": ""
+ ,
+"imdb_rating": 0}
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+      "pk": 79,
+      "fields":
+      {
+      "title": "The Munsters' Revenge",
+      "isMovie": true,
+      "genre": "",
+      "subGenre": "",
+      "spirit": "",
+      "era": "",
+      "isNostalgic": true,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": []
+,      "imdb_img": ""
+ ,
+"imdb_rating": 0}
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+  "pk": 80,
+      "fields":
+      {
+      "title": "The Munsters: Family Portrait",
+      "isMovie": true,
+      "genre": "",
+      "subGenre": "",
+      "spirit": "",
+      "era": "",
+     "isNostalgic": true,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": []
+,      "imdb_img": ""
+ ,
+"imdb_rating": 0}
+},
+ { 
+      "model": "spooktoberapi.movie_tv", 
+      "pk": 81,
+      "fields":
+      {
+      "title": "Casper",
+      "isMovie": true,
+      "genre": "",
+      "subGenre": "",
+      "spirit": "",
+      "era": "",
+      "isNostalgic": true,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": []
+,      "imdb_img": ""
+ ,
+"imdb_rating": 0}
+},
+ { 
+      "model": "spooktoberapi.movie_tv", 
+      "pk": 82,
+      "fields":
+      {
+      "title": "Near Dark",
+      "isMovie": true,
+      "genre": "",
+      "subGenre": "",
+      "spirit": "",
+      "era": "",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": []
+,      "imdb_img": ""
+ ,
+"imdb_rating": 0}
+},
+ { 
+  "model": "spooktoberapi.movie_tv", 
+      "pk": 83,
+      "fields":
+      {
+      "title": "The Wisdom of Crocodiles",
+      "isMovie": true,
+      "genre": "",
+      "subGenre": "",
+      "spirit": "",
+      "era": "",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": []
+,      "imdb_img": ""
+ ,
+"imdb_rating": 0}
+},
+ { 
+      "model": "spooktoberapi.movie_tv", 
+      "pk": 84,
+      "fields":
+      {
+      "title": "The Thing",
+      "isMovie": true,
+      "genre": "",
+      "subGenre": "",
+      "spirit": "",
+      "era": "",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": []
+,      "imdb_img": ""
+ ,
+"imdb_rating": 0}
+},
+ { 
+      "model": "spooktoberapi.movie_tv", 
+      "pk": 85,
+      "fields":
+      {
+      "title": "High Spirits",
+      "isMovie": true,
+      "genre": "",
+      "subGenre": "",
+      "spirit": "",
+      "era": "",
+      "isNostalgic": false,
+      "isMagic": false,
+      "isTimBurton": false,
+      "isStopMotion": false,
+      "supernatural": [],
+      "imdb_img": "",
+      "imdb_rating": 0
+      }
+    }
+  ]

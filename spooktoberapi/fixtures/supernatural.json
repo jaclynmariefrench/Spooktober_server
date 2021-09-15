@@ -1,0 +1,107 @@
+[
+{
+    "model": "spooktoberapi.supernatural",
+    "pk": 1,
+    "fields":
+        {
+            "label": "Zombie"
+        }
+    },
+{
+    "model": "spooktoberapi.supernatural",
+    "pk": 2,
+    "fields":
+        {
+            "label": "Frankenstein"
+        }
+    },
+{
+    "model": "spooktoberapi.supernatural",
+    "pk": 3,
+    "fields":
+        {
+            "label": "Werewolf"
+        }
+    },
+{
+    "model": "spooktoberapi.supernatural",
+    "pk": 4,
+    "fields":
+        {
+            "label": "Creature"
+        }
+    },
+{
+    "model": "spooktoberapi.supernatural",
+    "pk": 5,
+    "fields":
+        {
+            "label": "Vampire"
+        }
+    },
+{
+    "model": "spooktoberapi.supernatural",
+    "pk": 6,
+    "fields":
+        {
+            "label": "Angel/Demons"
+        }
+    },
+{
+    "model": "spooktoberapi.supernatural",
+    "pk": 7,
+    "fields":
+        {
+            "label": "Slasher"
+        }
+    },
+{
+    "model": "spooktoberapi.supernatural",
+    "pk": 8,
+    "fields":
+        {
+            "label": "Ghost"
+        }
+    },
+{
+    "model": "spooktoberapi.supernatural",
+    "pk": 9,
+    "fields":
+        {
+            "label": "Witch"
+        }
+    },
+{
+    "model": "spooktoberapi.supernatural",
+    "pk": 10,
+    "fields":
+        {
+            "label": "Wizard"
+        }
+    },
+{
+    "model": "spooktoberapi.supernatural",
+    "pk": 11,
+    "fields":
+        {
+            "label": "Killer"
+        }
+    },
+{
+    "model": "spooktoberapi.supernatural",
+    "pk": 12,
+    "fields":
+        {
+            "label": "Mummy"
+        }
+    },
+{
+    "model": "spooktoberapi.supernatural",
+    "pk": 13,
+    "fields":
+        {
+            "label": "Alien"
+        }
+    }
+
+]

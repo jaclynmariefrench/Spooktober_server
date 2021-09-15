@@ -16,5 +16,6 @@ class Movie_Tv(models.Model):
     isMagic = models.BooleanField()
     isTimBurton = models.BooleanField()
     isStopMotion = models.BooleanField()
-    imdb_img = models.ImageField()
+    imdb_img = models.URLField()
     imdb_rating = models.IntegerField()
+    supernatural = models.ManyToManyField("Supernatural", through="SupernaturalTags")
