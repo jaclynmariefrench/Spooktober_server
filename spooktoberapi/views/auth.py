@@ -14,6 +14,7 @@ def login(request):
     email = request.data['email']
     google_id = request.data['googleId']
 
+
     try:
         user = User.objects.get(email=email)
         token = Token.objects.get(user_id=user.id)
@@ -27,7 +28,7 @@ def login(request):
         user = User.objects.create_user(
             email=email,
             password=google_id,
-            username=name
+            username=name,
         )
 
         token = Token.objects.create(user_id=user.id)
