@@ -5,7 +5,9 @@
         "fields": 
         {
             "movie_tv": 2,
-            "selected": "2021-09-16"
+            "all_day": true,
+            "start": "2021-09-16",
+            "end": "2021-09-16"
         }
     },
     {
@@ -14,7 +16,9 @@
         "fields": 
         {
             "movie_tv": 1,
-            "selected": "2021-09-16"
+            "all_day": true,
+            "start": "2021-09-17",
+            "end": "2021-09-17"
         }
     }
 ]
