@@ -1,3 +1,4 @@
+from spooktoberapi.models.spooktober_user import SpooktoberUser
 from rest_framework.response import Response
 from rest_framework import serializers
 from rest_framework import status
@@ -16,7 +17,7 @@ class UserView(ViewSet):
                 Response -- JSON serialized user instance
             """
             try:
-                user = User.objects.get(pk=pk)
+                user = SpooktoberUser.objects.get(pk=pk)
                 serializer = UserSerializer(user, context={'request': request})
                 return Response(serializer.data, status=status.HTTP_200_OK)
             except Exception as ex:
@@ -29,7 +30,7 @@ class UserView(ViewSet):
             Returns:
                 Response -- JSON serialized list of games
             """
-            users = User.objects.all()
+            users = SpooktoberUser.objects.all()
 
             serializer = UserSerializer(
                 users, many=True, context={'request': request})
@@ -41,6 +42,6 @@ class UserSerializer(serializers.ModelSerializer):
     Arguments:
     """
     class Meta:
-        model = User
-        fields = ('id', 'username', 'email')
-        depth = 1
+        model = SpooktoberUser
+        fields = ('user', 'userCalId', 'canEditDB')
+        depth = 2
