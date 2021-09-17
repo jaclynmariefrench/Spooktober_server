@@ -100,6 +100,9 @@ class CalendarView(ViewSet):
         # Get the current authenticated user
         spooktober_user = SpooktoberUser.objects.get(user=request.auth.user)
         cal_events = UserCal.objects.all()
+        for cal_event in cal_events:
+            # may need to change
+            cal_event.title = cal_event.movie_tv.title
 
         # Set the `joined` property on every event
         # for cal_event in cal_events:
@@ -174,4 +177,5 @@ class CalEventSerializer(serializers.ModelSerializer):
 
     class Meta:
             model = UserCal
-            fields = ['id', 'movie_tv', 'all_day', 'start', 'end']
+            fields = ['id', 'movie_tv', 'all_day', 'start', 'end', 'title']
+            depth = 1
