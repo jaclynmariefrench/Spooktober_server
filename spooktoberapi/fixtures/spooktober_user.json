@@ -5,7 +5,7 @@
         "fields": 
         {
             "user_id": 4,
-            "userCalId": [1, 4],
+            "cal_events": [1, 4],
             "canEditDB": true
         }
     }

@@ -6,8 +6,7 @@ class UserCal(models.Model):
     Fields:
     
     """
-    # Need to change many to many
-    movie_tv= models.ForeignKey("movie_tv", on_delete=models.CASCADE)
+    movie_tv= models.ForeignKey("Movie_Tv", on_delete=models.CASCADE)
     selected = models.DateField()
 
 
