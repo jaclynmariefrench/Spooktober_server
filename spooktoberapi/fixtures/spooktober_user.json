@@ -1,12 +1,20 @@
 [
     {
         "model": "spooktoberapi.SpooktoberUser",
-        "pk": 4,
+        "pk": 1,
         "fields": 
         {
-            "user_id": 4,
-            "cal_events": [1, 4],
+            "user_id": 1,
             "canEditDB": true
+        }
+    },
+    {
+        "model": "spooktoberapi.SpooktoberUser",
+        "pk": 2,
+        "fields": 
+        {
+            "user_id": 2,
+            "canEditDB": false
         }
     }
 ]

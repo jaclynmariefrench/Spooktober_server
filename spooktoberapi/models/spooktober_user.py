@@ -10,5 +10,4 @@ class SpooktoberUser(models.Model):
         
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    cal_events = models.ManyToManyField("UserCal")
     canEditDB = models.BooleanField()

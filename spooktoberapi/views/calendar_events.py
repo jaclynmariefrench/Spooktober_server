@@ -21,10 +21,11 @@ class CalendarView(ViewSet):
         Returns:
             Response -- JSON serialized event instance
         """
-        spooktober_user = SpooktoberUser.objects.get(user=request.auth.user)
+
 
         cal_events = UserCal()
-        cal_events.movie_tv = Movie_Tv.objects.get(pk=request.data["movie_tv_id"])
+        cal_events.spooktober_user = SpooktoberUser.objects.get(user=request.auth.user)
+        cal_events.movie_tv = Movie_Tv.objects.get(pk=request.data["movie_tv"])
         cal_events.all_day = request.data["all_day"]
         cal_events.start = request.data["start"]
         cal_events.end = request.data["end"]
@@ -52,27 +53,6 @@ class CalendarView(ViewSet):
         except Exception as ex:
             return HttpResponseServerError(ex)
 
-    # def update(self, request, pk=None):
-    #     """Handle PUT requests for an event
-
-    #     Returns:
-    #         Response -- Empty body with 204 status code
-    #     """
-    #     host = Gamer.objects.get(user=request.auth.user)
-
-    #     event = Event.objects.get(pk=pk)
-    #     event.description = request.data["description"]
-    #     event.date = request.data["date"]
-    #     event.title = request.data["title"]
-    #     event.time = request.data["time"]
-    #     event.host = host
-
-    #     game = Game.objects.get(pk=request.data["game_id"])
-    #     event.game = game
-    #     event.save()
-
-    #     return Response({}, status=status.HTTP_204_NO_CONTENT)
-
     def destroy(self, request, pk=None):
         """Handle DELETE requests for a single cal_event
 
@@ -97,17 +77,13 @@ class CalendarView(ViewSet):
         Returns:
             Response -- JSON serialized list of events
         """
-        # Get the current authenticated user
-        spooktober_user = SpooktoberUser.objects.get(user=request.auth.user)
         cal_events = UserCal.objects.all()
+        # current_user = SpooktoberUser.objects.get(user=request.auth.user)
+        # current_user.cal_events = UserCal.objects.filter(spooktober_user=current_user)
+        
         for cal_event in cal_events:
             # may need to change
             cal_event.title = cal_event.movie_tv.title
-
-        # Set the `joined` property on every event
-        # for cal_event in cal_events:
-            # Check to see if the gamer is in the attendees list on the event
-            # event.joined = gamer in event.attendees.all()
 
         # Support filtering events by game
         movie_tv = self.request.query_params.get('movieTv', None)
@@ -117,44 +93,6 @@ class CalendarView(ViewSet):
         serializer = CalEventSerializer(
             cal_events, many=True, context={'request': request})
         return Response(serializer.data)
-
-    
-    # @action(methods=['post', 'delete'], detail=True)
-    # def signup(self, request, pk=None):
-    #     """Managing gamers signing up for events"""
-    #     # Django uses the `Authorization` header to determine
-    #     # which user is making the request to sign up
-    #     gamer = Gamer.objects.get(user=request.auth.user)
-    
-    #     try:
-    #         # Handle the case if the client specifies a game
-    #         # that doesn't exist
-    #         event = Event.objects.get(pk=pk)
-    #     except Event.DoesNotExist:
-    #         return Response(
-    #             {'message': 'Event does not exist.'},
-    #             status=status.HTTP_404_NOT_FOUND
-    #         )
-
-    #     # A gamer wants to sign up for an event
-    #     if request.method == "POST":
-    #         try:
-    #             # Using the attendees field on the event makes it simple to add a gamer to the event
-    #             # .add(gamer) will insert into the join table a new row the gamer_id and the event_id
-    #             event.attendees.add(gamer)
-    #             return Response({}, status=status.HTTP_201_CREATED)
-    #         except Exception as ex:
-    #             return Response({'message': ex.args[0]})
-
-    # # User wants to leave a previously joined event
-    #     elif request.method == "DELETE":
-    #         try:
-    #             # The many to many relationship has a .remove method that removes the gamer from the attendees list
-    #             # The method deletes the row in the join table that has the gamer_id and event_id
-    #             event.attendees.remove(gamer)
-    #             return Response(None, status=status.HTTP_204_NO_CONTENT)
-    #         except Exception as ex:
-    #             return Response({'message': ex.args[0]})
 
 
 
@@ -177,5 +115,5 @@ class CalEventSerializer(serializers.ModelSerializer):
 
     class Meta:
             model = UserCal
-            fields = ['id', 'movie_tv', 'all_day', 'start', 'end', 'title']
+            fields = ['id', 'movie_tv', 'spooktober_user', 'all_day', 'start', 'end', 'title']
             depth = 1
