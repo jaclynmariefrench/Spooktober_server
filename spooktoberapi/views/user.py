@@ -43,5 +43,5 @@ class UserSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = SpooktoberUser
-        fields = ('user', 'userCalId', 'canEditDB')
+        fields = ('user', 'canEditDB')
         depth = 2
