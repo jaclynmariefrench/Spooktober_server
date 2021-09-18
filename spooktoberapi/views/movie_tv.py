@@ -58,6 +58,6 @@ class MovieTvSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = Movie_Tv
-        fields = ('id', 'title', 'subGenre', 'spirit', 'era', 'isMovie', 'isNostalgic',
+        fields = ('id', 'title', 'genre', 'subGenre', 'spirit', 'era', 'isMovie', 'isNostalgic',
                   'isMagic', 'isTimBurton', 'isStopMotion', 'imdb_img', 'imdb_rating', 'supernatural')
         depth = 1
