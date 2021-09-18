@@ -1,0 +1,66 @@
+[
+    {
+        "model": "spooktoberapi.era",
+        "pk": 1,
+        "fields":
+            {
+                "label": "80s"
+            }
+        },
+    {
+        "model": "spooktoberapi.era",
+        "pk": 2,
+        "fields":
+            {
+                "label": "90s"
+            }
+        },
+    {
+        "model": "spooktoberapi.era",
+        "pk": 3,
+        "fields":
+            {
+                "label": "2000s"
+            }
+        },
+    {
+        "model": "spooktoberapi.era",
+        "pk": 4,
+        "fields":
+            {
+                "label": "50s"
+            }
+        },
+    {
+        "model": "spooktoberapi.era",
+        "pk": 5,
+        "fields":
+            {
+                "label": "Classic Hollywood"
+            }
+        },
+    {
+        "model": "spooktoberapi.era",
+        "pk": 6,
+        "fields":
+            {
+                "label": "2020s"
+            }
+        },
+    {
+        "model": "spooktoberapi.era",
+        "pk": 7,
+        "fields":
+            {
+                "label": "70s"
+            }
+        },
+    {
+        "model": "spooktoberapi.era",
+        "pk": 8,
+        "fields":
+            {
+                "label": ""
+            }
+        }
+]
