@@ -1,0 +1,66 @@
+[
+    {
+        "model": "spooktoberapi.spirit",
+        "pk": 1,
+        "fields":
+            {
+                "label": "Scary"
+            }
+        },
+    {
+        "model": "spooktoberapi.spirit",
+        "pk": 2,
+        "fields":
+            {
+                "label": "Spooky"
+            }
+        },
+    {
+        "model": "spooktoberapi.spirit",
+        "pk": 3,
+        "fields":
+            {
+                "label": "Gorey"
+            }
+        },
+    {
+        "model": "spooktoberapi.spirit",
+        "pk": 4,
+        "fields":
+            {
+                "label": "Magical"
+            }
+        },
+    {
+        "model": "spooktoberapi.spirit",
+        "pk": 5,
+        "fields":
+            {
+                "label": "Victorian"
+            }
+        },
+    {
+        "model": "spooktoberapi.spirit",
+        "pk": 6,
+        "fields":
+            {
+                "label": "Fun"
+            }
+        },
+    {
+        "model": "spooktoberapi.spirit",
+        "pk": 7,
+        "fields":
+            {
+                "label": "Autumn"
+            }
+        },
+    {
+        "model": "spooktoberapi.spirit",
+        "pk": 8,
+        "fields":
+            {
+                "label": ""
+            }
+        }
+]
