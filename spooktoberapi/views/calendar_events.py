@@ -82,7 +82,6 @@ class CalendarView(ViewSet):
         # current_user.cal_events = UserCal.objects.filter(spooktober_user=current_user)
         
         for cal_event in cal_events:
-            # may need to change
             cal_event.title = cal_event.movie_tv.title
 
         # Support filtering events by game
@@ -107,7 +106,7 @@ class MovieTvSerializer(serializers.ModelSerializer):
     """JSON serializer for games"""
     class Meta:
         model = Movie_Tv
-        fields = ('id', 'title')
+        fields = ('id',)
 
 class CalEventSerializer(serializers.ModelSerializer):
     """JSON serializer for events"""
@@ -116,4 +115,3 @@ class CalEventSerializer(serializers.ModelSerializer):
     class Meta:
             model = UserCal
             fields = ['id', 'movie_tv', 'spooktober_user', 'all_day', 'start', 'end', 'title']
-            depth = 1

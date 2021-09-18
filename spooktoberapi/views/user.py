@@ -32,6 +32,10 @@ class UserView(ViewSet):
             """
             users = SpooktoberUser.objects.all()
 
+            for u in users:
+            # may need to change
+                u.username = u.user.username
+
             serializer = UserSerializer(
                 users, many=True, context={'request': request})
             return Response(serializer.data)
@@ -43,5 +47,5 @@ class UserSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = SpooktoberUser
-        fields = ('user', 'userCalId', 'canEditDB')
-        depth = 2
+        fields = ('user', 'canEditDB', 'username')
+        depth = 1

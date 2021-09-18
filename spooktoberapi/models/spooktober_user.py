@@ -11,3 +11,12 @@ class SpooktoberUser(models.Model):
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     canEditDB = models.BooleanField()
+
+    @property
+    def username(self):
+        """username"""
+        return self.__title
+
+    @username.setter
+    def username(self, value):
+        self.__username = value
