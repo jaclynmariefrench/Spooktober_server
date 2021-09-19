@@ -1,0 +1,11 @@
+[
+    {
+        "model": "spooktoberapi.waitlist",
+        "pk": 1,
+        "fields":
+            {
+                "movie_tv": 22,
+                "spooktober_user": 1
+            }
+        }
+]

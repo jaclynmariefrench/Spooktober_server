@@ -1,3 +1,4 @@
+from spooktoberapi.views.waitlist import WaitlistView
 from spooktoberapi.views.search import EraSearchView, SpiritSearchView
 from spooktoberapi.views.calendar_events import CalendarView
 from spooktoberapi.views.user import UserView
@@ -15,6 +16,7 @@ router.register(r'era', EraSearchView, 'era')
 router.register(r'spirit', SpiritSearchView, 'spirit')
 router.register(r'users', UserView, 'user')
 router.register(r'calendar', CalendarView, 'calendar')
+router.register(r'waitlist', WaitlistView, 'waitlist')
 
 urlpatterns = [
     path('admin/', admin.site.urls),

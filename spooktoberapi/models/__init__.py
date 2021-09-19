@@ -5,3 +5,4 @@ from .calendar import UserCal
 from .spooktober_user import SpooktoberUser
 from .era import Era
 from .spirit import Spirit
+from .waitlist import Waitlist
