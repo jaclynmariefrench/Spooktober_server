@@ -1,0 +1,21 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields":
+    {
+      "id": 1,
+      "password": "pbkdf2_sha256$260000$S4dgCafbT8PWdGLFs1twMK$CvGorXEIQG4RfZSxfw7gP0WfADRCbna1IPx8APwMyQQ=",
+      "last_login": null,
+      "is_superuser": 0,
+      "username": "Spook Tober",
+      "last_name": "",
+      "email": "spooktoberusertest@gmail.com",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2021-09-20 13:43:18.671703",
+      "first_name": ""
+    }
+
+  }
+]
