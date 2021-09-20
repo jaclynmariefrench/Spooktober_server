@@ -19,3 +19,12 @@ class Movie_Tv(models.Model):
     imdb_img = models.URLField()
     imdb_rating = models.IntegerField()
     supernatural = models.ManyToManyField("Supernatural", through="SupernaturalTags")
+    user_waitlist = models.ManyToManyField("Spooktoberuser", through="Waitlist")
+
+    @property
+    def added(self):
+        return self.__added
+
+    @added.setter
+    def added(self, value):
+        self.__added = value
