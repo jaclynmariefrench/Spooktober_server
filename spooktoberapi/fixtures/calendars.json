@@ -22,5 +22,17 @@
             "start": "2021-09-17T05:00:00.000Z",
             "end": "2021-09-17T05:00:00.000Z"
         }
+    },
+    {
+        "model": "spooktoberapi.UserCal",
+        "pk": 3,
+        "fields": 
+        {
+            "spooktober_user": 2,
+            "movie_tv": 23,
+            "all_day": true,
+            "start": "2021-09-17T05:00:00.000Z",
+            "end": "2021-09-17T05:00:00.000Z"
+        }
     }
 ]
