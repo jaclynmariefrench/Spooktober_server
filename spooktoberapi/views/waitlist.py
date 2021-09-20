@@ -85,22 +85,25 @@ class WaitlistView(ViewSet):
 
 
 
-# class SpooktoberCalSerializer(serializers.ModelSerializer):
-#     """JSON serializer for event host's related Django user"""
-#     class Meta:
-#         model = SpooktoberUser
-#         fields = ['user']
+class SpooktoberUserSerializer(serializers.ModelSerializer):
+    """JSON serializer for event host's related Django user"""
+    class Meta:
+        model = SpooktoberUser
+        fields = ['user']
 
 
-# class MovieTvSerializer(serializers.ModelSerializer):
-#     """JSON serializer for games"""
-#     class Meta:
-#         model = Movie_Tv
-#         fields = ('id',)
+class MovieTvSerializer(serializers.ModelSerializer):
+    """JSON serializer for games"""
+    class Meta:
+        model = Movie_Tv
+        fields = ('id', 'title')
 
 class WaitlistSerializer(serializers.ModelSerializer):
     """JSON serializer for waitlist"""
+    movie_tv = MovieTvSerializer(many=False)
+    spooktober_user = SpooktoberUserSerializer(many=False)
 
     class Meta:
             model = Waitlist
             fields = ['id', 'movie_tv', 'spooktober_user']
+            depth= 1
