@@ -7,5 +7,14 @@
                 "movie_tv": 22,
                 "spooktober_user": 1
             }
-        }
+        },
+        {
+            "model": "spooktoberapi.waitlist",
+            "pk": 2,
+            "fields":
+                {
+                    "movie_tv": 22,
+                    "spooktober_user": 2
+                }
+            }
 ]

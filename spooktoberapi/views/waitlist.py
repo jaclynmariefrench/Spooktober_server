@@ -74,9 +74,10 @@ class WaitlistView(ViewSet):
         Returns:
             Response -- JSON serialized list of events
         """
-        waitlist_list = Waitlist.objects.all()
-        # current_user = SpooktoberUser.objects.get(user=request.auth.user)
-        # current_user.cal_events = UserCal.objects.filter(spooktober_user=current_user)
+        # waitlist_list = Waitlist.objects.all()
+        spooktober_user = SpooktoberUser.objects.get(user=request.auth.user)
+        waitlist_list = Waitlist.objects.filter(
+        spooktober_user=spooktober_user)
 
 
         serializer = WaitlistSerializer(

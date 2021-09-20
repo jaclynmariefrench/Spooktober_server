@@ -77,9 +77,11 @@ class CalendarView(ViewSet):
         Returns:
             Response -- JSON serialized list of events
         """
-        cal_events = UserCal.objects.all()
-        # current_user = SpooktoberUser.objects.get(user=request.auth.user)
-        # current_user.cal_events = UserCal.objects.filter(spooktober_user=current_user)
+        
+        
+        spooktober_user = SpooktoberUser.objects.get(user=request.auth.user)
+        cal_events = UserCal.objects.filter(
+        spooktober_user=spooktober_user)
         
         for cal_event in cal_events:
             cal_event.title = cal_event.movie_tv.title
