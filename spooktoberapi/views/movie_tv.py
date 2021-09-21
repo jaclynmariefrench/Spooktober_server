@@ -3,6 +3,7 @@ from spooktoberapi.models.movie_tv import Movie_Tv
 from spooktoberapi.models.spooktober_user import SpooktoberUser
 from rest_framework.decorators import action
 from spooktoberapi.models.supernatural import Supernatural
+from django.db.models import Q
 
 from django.core.exceptions import ValidationError
 from rest_framework import status
@@ -26,6 +27,13 @@ class MovieTvView(ViewSet):
             movie_tv = Movie_Tv.objects.get(pk=pk)
             serializer = MovieTvSerializer(
                 movie_tv, context={'request': request})
+
+        #     search_text = self.request.query_params.get('q', None)
+
+        #     Movie_Tv.objects.filter(
+        #         Q(era__contains=search_text) |
+        #         Q(spirit__contains=search_text)
+        # )
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Exception as ex:
             return HttpResponseServerError(ex)
@@ -89,6 +97,7 @@ class MovieTvView(ViewSet):
                 return Response(None, status=status.HTTP_204_NO_CONTENT)
             except Exception as ex:
                 return Response({'message': ex.args[0]})
+        
 
 
 class MovieTvSerializer(serializers.ModelSerializer):
