@@ -94,6 +94,26 @@ class CalendarView(ViewSet):
         serializer = CalEventSerializer(
             cal_events, many=True, context={'request': request})
         return Response(serializer.data)
+    def update(self, request, pk=None):
+        """Handle PUT requests for an calendar event
+
+        Returns:
+            Response -- Empty body with 204 status code
+        """
+        spooktober_user = SpooktoberUser.objects.get(user=request.auth.user)
+
+        cal_event = UserCal.objects.get(pk=pk)
+        movie_tv_id = Movie_Tv.objects.get(pk=request.data["movie_tv"])
+        cal_event.spooktober_user = spooktober_user
+        cal_event.all_day = request.data["all_day"]
+        cal_event.start = request.data["start"]
+        cal_event.end = request.data["end"]
+
+        cal_event.movie_tv_id = movie_tv_id
+        cal_event.save()
+
+        return Response({}, status=status.HTTP_204_NO_CONTENT)
+
 
 
 
