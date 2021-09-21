@@ -39,7 +39,7 @@ def login(request):
         token = Token.objects.create(user_id=spooktober_user.user.id)
         data = {
             'valid': True, 
-            'token': token.key
+            'token': token.key 
         }
         
         return Response(data)

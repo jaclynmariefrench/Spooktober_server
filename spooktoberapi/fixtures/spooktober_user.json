@@ -4,17 +4,7 @@
         "pk": 1,
         "fields": 
         {
-            "user_id": 1,
-            "canEditDB": true
-        }
-    },
-    {
-        "model": "spooktoberapi.SpooktoberUser",
-        "pk": 2,
-        "fields": 
-        {
-            "user_id": 2,
-            "canEditDB": false
+            "user_id": 1
         }
     }
 ]
