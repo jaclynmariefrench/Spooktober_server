@@ -2,6 +2,7 @@
     "python.formatting.autopep8Path": "/Users/jaclynfrench/.pyenv/shims/autopep8",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
+    "sqltools.useNodeRuntime": true,
     "python.linting.pylintArgs": [
         "--load-plugins=pylint_django",
         "--django-settings-module=spooktober_server.settings",
