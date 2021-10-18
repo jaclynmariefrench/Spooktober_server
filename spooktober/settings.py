@@ -1,5 +1,7 @@
 from pathlib import Path
 from decouple import config 
+import django_on_heroku
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -116,8 +118,8 @@ SOCIALACCOUNT_PROVIDERS = {
         # (``socialaccount`` app) containing the required client
         # credentials, or list them here:
         'APP': {
-            'client_id': '151641205925-1m112obp0km0gd74pongd3i1upco1019.apps.googleusercontent.com',
-            'secret': 'AUdtcRnH1T4k4u9u68zEVAwk',
+            'client_id': config('DJANGO_GOOGLE_OAUTH2_CLIENT_ID'),
+            'secret': config('DJANGO_GOOGLE_OAUTH2_CLIENT_SECRET'),
             'key': ''
         }
     }
@@ -167,4 +169,11 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = "/static/"
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+
+django_on_heroku.settings(locals())
+
 

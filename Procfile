@@ -1,0 +1,1 @@
+web: gunicorn spooktober.wsgi --log-file -
