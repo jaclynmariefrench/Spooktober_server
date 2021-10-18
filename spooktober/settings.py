@@ -1,5 +1,4 @@
 from pathlib import Path
-from decouple import config 
 import django_on_heroku
 import os
 
@@ -10,9 +9,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
-DEBUG = config('DEBUG', cast=bool)
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -118,8 +117,8 @@ SOCIALACCOUNT_PROVIDERS = {
         # (``socialaccount`` app) containing the required client
         # credentials, or list them here:
         'APP': {
-            'client_id': config('DJANGO_GOOGLE_OAUTH2_CLIENT_ID'),
-            'secret': config('DJANGO_GOOGLE_OAUTH2_CLIENT_SECRET'),
+            'client_id': os.environ.get('DJANGO_GOOGLE_OAUTH2_CLIENT_ID'),
+            'secret': os.environ.get('DJANGO_GOOGLE_OAUTH2_CLIENT_SECRET'),
             'key': ''
         }
     }
