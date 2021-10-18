@@ -30,11 +30,11 @@ INSTALLED_APPS = [
     'corsheaders',
     'spooktoberapi',
     'django.contrib.sites',
-    'allauth',
+    # 'allauth',
     'social_django',
-    'allauth.account',
-    'allauth.socialaccount',
-    'allauth.socialaccount.providers.google',
+    # 'allauth.account',
+    # 'allauth.socialaccount',
+    # 'allauth.socialaccount.providers.google',
 ]
 
 REST_FRAMEWORK = {
