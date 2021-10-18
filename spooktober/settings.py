@@ -31,7 +31,7 @@ INSTALLED_APPS = [
     'spooktoberapi',
     'django.contrib.sites',
     # 'allauth',
-    'social_django',
+    # 'social_django',
     # 'allauth.account',
     # 'allauth.socialaccount',
     # 'allauth.socialaccount.providers.google',
