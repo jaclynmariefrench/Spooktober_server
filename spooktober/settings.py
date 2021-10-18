@@ -13,7 +13,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['spooktober-server.herokuapp.com/']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
